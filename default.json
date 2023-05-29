@@ -3,7 +3,7 @@
   "timezone": "Europe/Warsaw",
   "extends": ["config:base"],
   "schedule": [
-    "before 6:32pm on Monday"
+    "before 10pm on Monday"
   ],
   "packageRules": [
     {
