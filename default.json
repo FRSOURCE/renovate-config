@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "timezone": "Europe/Warsaw",
-  "extends": ["config:base", ":disableDependencyDashboard"],
+  "extends": ["config:base"],
   "schedule": [
     "before 6:32pm on Monday"
   ],
