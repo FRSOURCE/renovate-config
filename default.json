@@ -3,14 +3,12 @@
   "timezone": "Europe/Warsaw",
   "extends": ["config:base", ":disableDependencyDashboard"],
   "schedule": [
-    "before 5am on Monday"
+    "before 3pm on Monday"
   ],
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["major"],
-      "groupName": "all major dependency bump",
-      "groupSlug": "all-major"
+      "matchUpdateTypes": ["major"]
     },
     {
       "matchPackagePatterns": ["*"],
