@@ -29,6 +29,12 @@
       "groupName": "postcss packages"
     },
     {
+      "groupName": "vueuse",
+      "matchPackagePrefixes": [
+        "@vueuse/"
+      ]
+    },
+    {
       "extends": "packages:test",
       "groupName": "test packages",
       "automerge": true
