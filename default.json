@@ -7,21 +7,31 @@
   ],
   "packageRules": [
     {
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["minor"],
       "groupName": "all minor dependency bump",
-      "groupSlug": "all-minor"
+      "groupSlug": "all-minor",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor"]
     },
     {
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["patch"],
       "groupName": "all non-major dependency bump",
       "groupSlug": "all-patch",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    },
+    {
+      "groupName": "FRSOURCE tooling configuration",
+      "groupSlug": "frsource-configs",
+      "matchPackageNames": ["@frsource/*-config"],
       "automerge": true
     },
     {
       "extends": "packages:linters",
       "groupName": "linters",
+      "matchPackageNames": [
+        "@frsource/eslint-config",
+        "@frsource/prettier-config"
+      ],
       "automerge": true
     },
     {
@@ -30,8 +40,8 @@
     },
     {
       "groupName": "vueuse",
-      "matchPackagePrefixes": [
-        "@vueuse/"
+      "matchPackageNames": [
+        "@vueuse/**"
       ]
     },
     {
@@ -40,12 +50,17 @@
       "automerge": true
     },
     {
-      "groupName": "vitest",
-      "matchPackagePrefixes": ["@vitest/", "vitest"]
+      "groupName": "vitest packages",
+      "matchPackageNames": [
+        "@vitest/**",
+        "vitest",
+        "globals-vitest"
+      ],
+      "automerge": true
     },
     {
       "groupName": "definitelyTyped",
-      "matchPackagePrefixes": ["@types/"],
+      "matchPackageNames": ["@types/**"],
       "automerge": true
     }
   ]
