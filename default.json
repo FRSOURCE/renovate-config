@@ -30,7 +30,8 @@
       "groupName": "linters",
       "matchPackageNames": [
         "@frsource/eslint-config",
-        "@frsource/prettier-config"
+        "@frsource/prettier-config",
+        "globals"
       ],
       "automerge": true
     },
