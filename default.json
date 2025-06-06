@@ -30,16 +30,6 @@
       "automerge": true
     },
     {
-      "extends": "packages:postcss",
-      "groupName": "postcss packages"
-    },
-    {
-      "groupName": "vueuse",
-      "matchPackageNames": [
-        "@vueuse/**"
-      ]
-    },
-    {
       "extends": "packages:test",
       "groupName": "test packages",
       "automerge": true
@@ -63,6 +53,16 @@
       "groupSlug": "all-minor",
       "matchPackageNames": ["*"],
       "matchUpdateTypes": ["minor"]
+    },
+    {
+      "extends": "packages:postcss",
+      "groupName": "postcss packages"
+    },
+    {
+      "groupName": "vueuse",
+      "matchPackageNames": [
+        "@vueuse/**"
+      ]
     }
   ]
 }
