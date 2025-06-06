@@ -7,12 +7,6 @@
   ],
   "packageRules": [
     {
-      "groupName": "all minor dependency bump",
-      "groupSlug": "all-minor",
-      "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["minor"]
-    },
-    {
       "groupName": "all non-major dependency bump",
       "groupSlug": "all-patch",
       "matchPackageNames": ["*"],
@@ -63,6 +57,12 @@
       "groupName": "definitelyTyped",
       "matchPackageNames": ["@types/**"],
       "automerge": true
+    },
+    {
+      "groupName": "all minor dependency bump",
+      "groupSlug": "all-minor",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor"]
     }
   ]
 }
