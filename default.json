@@ -5,6 +5,7 @@
   "schedule": [
     "before 5am on Monday"
   ],
+  "minimumReleaseAge": "1 day",
   "packageRules": [
     {
       "groupName": "all non-major dependency bump",
