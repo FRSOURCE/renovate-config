@@ -31,17 +31,17 @@
       "automerge": true
     },
     {
-      "extends": "packages:test",
-      "groupName": "test packages",
-      "automerge": true
-    },
-    {
       "groupName": "vitest packages",
       "matchPackageNames": [
         "@vitest/**",
         "vitest",
         "globals-vitest"
       ],
+      "automerge": true
+    },
+    {
+      "extends": "packages:test",
+      "groupName": "test packages",
       "automerge": true
     },
     {
