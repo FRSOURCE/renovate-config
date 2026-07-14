@@ -6,6 +6,7 @@
     "before 5am on Monday"
   ],
   "minimumReleaseAge": "1 day",
+  "configMigration": true,
   "packageRules": [
     {
       "groupName": "all non-major dependency bump",
